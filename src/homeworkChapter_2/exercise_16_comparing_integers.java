@@ -34,6 +34,8 @@ public class exercise_16_comparing_integers {
         }// end method main
     }// end class Comparison
 
+//INTEGER data type stores whole numbers that range from-2,147,483,647 to 2,147,483,647 for 9 or 10 digits of precision.
+
 //output
 //        Please enter how many planets are in our solar system: 8
 //        Please enter how many planets do you think are in our galaxy: 100000000
