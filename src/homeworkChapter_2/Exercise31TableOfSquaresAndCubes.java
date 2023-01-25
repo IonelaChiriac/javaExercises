@@ -1,7 +1,5 @@
 package homeworkChapter_2;
 
-import java.util.Scanner;
-
 //(Table of Squares and Cubes)
 // write an application that calculates the squares and cubes of the numbers from 0 to 10 and
 //prints the resulting values in table format.
@@ -20,7 +18,7 @@ import java.util.Scanner;
         10   100   1000
 */
 
-public class exercise_31_TableOfSquaresAndCubes {
+public class Exercise31TableOfSquaresAndCubes {
 
     // main method begins execution of Java application
     public static void main(String[] args)

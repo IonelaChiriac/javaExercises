@@ -15,7 +15,7 @@ import java.util.Scanner;
 // Rather, specify each calculation as the value that will be output in a System.out.printf statement.
 // The values produced by the circumference and area calculations are floating-point numbers.
 // Such values can be output with the format specifier %f in a System.out.printf statement. You’ll learn more about floating-point numbers in Chapter 3.
-public class exercise_28_Circle {
+public class Exercise28Circle {
 
         // main method begins execution of Java application
         public static void main(String[] args)

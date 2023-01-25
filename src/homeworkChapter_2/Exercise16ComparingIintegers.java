@@ -7,7 +7,7 @@ import java.util.Scanner;
 // displays the larger number followed by the words "is larger".
 // If the numbers are equal, print the message "These numbers are equal".
 // Use the techniques shown in Fig. 2.15.
-public class exercise_16_comparing_integers {
+public class Exercise16ComparingIintegers {
 
         // main method begins execution of Java application
         public static void main(String[] args)

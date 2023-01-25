@@ -7,7 +7,7 @@ import java.util.Scanner;
 // An even number is a multiple of 2.
 // Any multiple of 2 leaves a remainder of 0 when divided by 2.
 
-public class exercise_25_odd_or_even {
+public class Exercise25OddEven {
 
         // main method begins execution of Java application
         public static void main(String[] args)

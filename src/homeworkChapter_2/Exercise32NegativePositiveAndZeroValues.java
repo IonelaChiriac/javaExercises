@@ -7,7 +7,7 @@ import java.util.Scanner;
 // the number of positive numbers input and
 //the number of zeros input.
 
-public class exercise_32_NegativePositiveAndZeroValues {
+public class Exercise32NegativePositiveAndZeroValues {
 
 
     // main method begins execution of Java application

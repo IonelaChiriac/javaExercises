@@ -1,7 +1,5 @@
 package homeworkChapter_2;
 
-import java.util.Scanner;
-
 //Here’s a peek ahead. In this chapter, you learned about integers and the type int.
 // Java can also represent floating-point numbers that contain decimal points, such as 3.14159.
 // Write an application that inputs from the user the radius of a circle as an integer
@@ -15,7 +13,7 @@ import java.util.Scanner;
 // Rather, specify each calculation as the value that will be output in a System.out.printf statement.
 // The values produced by the circumference and area calculations are floating-point numbers.
 // Such values can be output with the format specifier %f in a System.out.printf statement. You’ll learn more about floating-point numbers in Chapter 3.
-public class exercise_29_IntegerValueOfACharacter {
+public class Exercise29IntegerValueOfACharacter {
 
         // main method begins execution of Java application
         public static void main(String[] args)

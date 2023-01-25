@@ -5,7 +5,7 @@ import java.util.Scanner;
 //(Multiples) Write an application that reads two integers,
 //determines whether the first is a multiple of the second
 //and prints the result. [Hint: Use the remainder operator.]
-public class exercise_26_Multiples {
+public class Exercise26Multiples {
 
         // main method begins execution of Java application
         public static void main(String[] args)

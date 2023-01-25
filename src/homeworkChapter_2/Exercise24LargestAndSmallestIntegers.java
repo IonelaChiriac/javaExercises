@@ -5,7 +5,7 @@ import java.util.Scanner;
 //2.24 (Largest and Smallest Integers) Write an application that reads five integers
 // and determines and prints the largest and smallest integers in the group.
 // Use only the programming techniques you learned in this chapter.
-public class exercise_24_largest_and_smallest_integers {
+public class Exercise24LargestAndSmallestIntegers {
 
         // main method begins execution of Java application
         public static void main(String[] args)

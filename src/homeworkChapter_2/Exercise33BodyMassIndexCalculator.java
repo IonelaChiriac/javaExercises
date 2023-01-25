@@ -17,7 +17,7 @@ import java.util.Scanner;
 //Overweight: between 25 and 29.9
 //Obese: 30 or greater
 
-public class exercise_33_BodyMassIndexCalculator {
+public class Exercise33BodyMassIndexCalculator {
 
 
     // main method begins execution of Java application
@@ -28,10 +28,10 @@ public class exercise_33_BodyMassIndexCalculator {
         double heightInMeters;
         double bodyMassIndex;
 
-        System.out.println("Please enter weight in kilograms: ");
+        System.out.println("Please enter your weight in kilograms: ");
         weightInKilograms = input.nextDouble();
 
-        System.out.println("Please enter height in meters: ");
+        System.out.println("Please enter your height in meters: ");
         heightInMeters = input.nextDouble();
 
         bodyMassIndex = weightInKilograms / (heightInMeters * heightInMeters);
