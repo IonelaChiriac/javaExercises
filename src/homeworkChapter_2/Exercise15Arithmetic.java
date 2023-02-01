@@ -7,8 +7,7 @@ import java.util.Scanner;
 //Use the techniques shown in Fig. 2.7.
 public class Exercise15Arithmetic {
     // main method begins execution of Java application
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // create a Scanner to obtain input from the command window
         Scanner input = new Scanner(System.in);
         int greenApples; // first number to add
@@ -19,22 +18,29 @@ public class Exercise15Arithmetic {
         int substraction;
 
 
-     System.out.print("Please enter how many green apples you picked from the garden: "); // prompt
+        System.out.print("Please enter how many green apples you picked from the garden: "); // prompt
         greenApples = input.nextInt(); // read first number from user
 
 
-     System.out.print("Please enter how many red apples you picked from the garden: "); // prompt
+        System.out.print("Please enter how many red apples you picked from the garden: "); // prompt
         redApples = input.nextInt(); // read second number from user
 
 
         sum = greenApples + redApples; //sum
         product = greenApples * redApples; //product
-        division = sum/2; //division
+        division = sum / 2; //division
         substraction = sum - greenApples;//substraction
-     System.out.printf("Well done!\nYou picked from the garden " + greenApples + " green apples and " + redApples + " red apples.\nNow you have a total of " + sum  + " yummy apples!\n" + "If you will offer to your friend half, then you will remain with " + division + " apples.\n" + "If you will substract the green one's which are " + greenApples + ", then you will remain with " + substraction + " red apples%nThe product is " + product);
-     // display each number introduced, then display the sum, then division
+        System.out.printf("Well done!\nYou picked from the garden " +
+                greenApples + " green apples and " +
+                redApples + " red apples.\nNow you have a total of " +
+                sum + " yummy apples!\n" + "If you will offer to your friend half, then you will remain with " +
+                division + " apples.\n" + "If you will substract the green one's which are " +
+                greenApples + ", then you will remain with " +
+                substraction + " red apples%nThe product is " +
+                product);
+        // display each number introduced, then display the sum, then division
 
-  }
+    }
 }
 //output
 //        Please enter how many green apples you picked from the garden: 15

@@ -17,21 +17,20 @@ import java.util.Scanner;
 // Such values can be output with the format specifier %f in a System.out.printf statement. You’ll learn more about floating-point numbers in Chapter 3.
 public class Exercise28Circle {
 
-        // main method begins execution of Java application
-        public static void main(String[] args)
-        {
-            // create Scanner to obtain input from command line
-            Scanner input = new Scanner(System.in);
+    // main method begins execution of Java application
+    public static void main(String[] args) {
+        // create Scanner to obtain input from command line
+        Scanner input = new Scanner(System.in);
 
-            int radius;
+        int radius;
 
-            System.out.println("Enter radius of circle :");
-            radius = input.nextInt();
+        System.out.println("Enter radius of circle :");
+        radius = input.nextInt();
 
-            System.out.printf("%s%d%n", "The diameter is ", 2 * radius);
-            System.out.printf("%s%f%n", "The circumference is ", 2 * Math.PI * radius);
-            System.out.printf("%s%f%n", "The area is ", Math.PI * radius * radius);
-        }
+        System.out.printf("%s%d%n", "The diameter is ", 2 * radius);
+        System.out.printf("%s%f%n", "The circumference is ", 2 * Math.PI * radius);
+        System.out.printf("%s%f%n", "The area is ", Math.PI * radius * radius);
+    }
 }
 
 //output

@@ -12,8 +12,7 @@ import java.util.Scanner;
 public class Exercise30SeparatingTheDigitsInAnInteger {
 
     // main method begins execution of Java application
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // create Scanner to obtain input from command line
         Scanner input = new Scanner(System.in);
 
@@ -21,7 +20,7 @@ public class Exercise30SeparatingTheDigitsInAnInteger {
 
         int numberInput = input.nextInt();
 
-        if(numberInput >= 10000 && numberInput <= 99999){
+        if (numberInput >= 10000 && numberInput <= 99999) {
             int firstDigit = numberInput / 10000;
             int secondDigit = numberInput / 1000 % 10;
             int thirdDigit = numberInput / 100 % 10;
@@ -34,3 +33,8 @@ public class Exercise30SeparatingTheDigitsInAnInteger {
         }
     }
 }
+
+//output
+//Please enter a five-digit number
+//        42339
+//        4   2   3   3   9

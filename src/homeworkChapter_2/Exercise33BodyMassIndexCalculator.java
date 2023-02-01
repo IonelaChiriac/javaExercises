@@ -1,4 +1,5 @@
 package homeworkChapter_2;
+
 import java.util.Scanner;
 
 //(Body Mass Index Calculator)
@@ -21,8 +22,7 @@ public class Exercise33BodyMassIndexCalculator {
 
 
     // main method begins execution of Java application
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double weightInKilograms;
         double heightInMeters;

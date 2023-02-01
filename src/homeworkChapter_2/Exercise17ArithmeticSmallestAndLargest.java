@@ -9,53 +9,52 @@ import java.util.Scanner;
 // Use the techniques shown in Fig. 2.15.
 public class Exercise17ArithmeticSmallestAndLargest {
 
-        // main method begins execution of Java application
-        public static void main(String[] args)
-        {
-            // create Scanner to obtain input from command line
-            Scanner input = new Scanner(System.in);
-            int planetsSolarSystem; // first number to compare
-            int planetsGalaxy; // second number to compare
-            int planetsUniverse; // third number to compare
-            int sum;
-            int average;
-            int product;
-            int largest;
-            int smallest;
+    // main method begins execution of Java application
+    public static void main(String[] args) {
+        // create Scanner to obtain input from command line
+        Scanner input = new Scanner(System.in);
+        int planetsSolarSystem; // first number to compare
+        int planetsGalaxy; // second number to compare
+        int planetsUniverse; // third number to compare
+        int sum;
+        int average;
+        int product;
+        int largest;
+        int smallest;
 
-            System.out.print("Please enter how many planets are in our solar system: "); // prompt
-            planetsSolarSystem = input.nextInt(); // read first number from user
+        System.out.print("Please enter how many planets are in our solar system: "); // prompt
+        planetsSolarSystem = input.nextInt(); // read first number from user
 
-            System.out.print("Please enter how many planets do you think that are in our galaxy: "); // prompt
-            planetsGalaxy = input.nextInt(); // read second number from user
+        System.out.print("Please enter how many planets do you think that are in our galaxy: "); // prompt
+        planetsGalaxy = input.nextInt(); // read second number from user
 
-            System.out.print("Please enter how many planets do you think that are in the universe: "); // prompt
-            planetsUniverse = input.nextInt(); // read third number from user
+        System.out.print("Please enter how many planets do you think that are in the universe: "); // prompt
+        planetsUniverse = input.nextInt(); // read third number from user
 
-            //sum
-            sum = planetsSolarSystem + planetsGalaxy + planetsUniverse;
-            System.out.println("Sum of all the planets is " + sum);
+        //sum
+        sum = planetsSolarSystem + planetsGalaxy + planetsUniverse;
+        System.out.println("Sum of all the planets is " + sum);
 
-            //average
-            average = sum / 3;
-            System.out.println("Average of all planets is " + average);
+        //average
+        average = sum / 3;
+        System.out.println("Average of all planets is " + average);
 
-            //product
-            product = planetsSolarSystem * planetsGalaxy * planetsUniverse;
-            System.out.println("Product of all planets is " + product);
+        //product
+        product = planetsSolarSystem * planetsGalaxy * planetsUniverse;
+        System.out.println("Product of all planets is " + product);
 
-            //largest
-            largest = planetsSolarSystem;
-            if(planetsGalaxy > planetsSolarSystem) largest = planetsGalaxy;
-            if(planetsUniverse > largest) largest = planetsUniverse;
-            System.out.println("Largest number of planets is " + largest);
+        //largest
+        largest = planetsSolarSystem;
+        if (planetsGalaxy > planetsSolarSystem) largest = planetsGalaxy;
+        if (planetsUniverse > largest) largest = planetsUniverse;
+        System.out.println("Largest number of planets is " + largest);
 
-            //smallest
-            smallest = planetsSolarSystem;
-            if(planetsGalaxy < planetsSolarSystem) smallest = planetsGalaxy;
-            if(planetsUniverse < smallest) smallest = planetsUniverse;
-            System.out.println("Smallest number of planets is " + smallest);
-        }
+        //smallest
+        smallest = planetsSolarSystem;
+        if (planetsGalaxy < planetsSolarSystem) smallest = planetsGalaxy;
+        if (planetsUniverse < smallest) smallest = planetsUniverse;
+        System.out.println("Smallest number of planets is " + smallest);
+    }
 }
 
 //INTEGER data type stores whole numbers that range from-2,147,483,647 to 2,147,483,647 for 9 or 10 digits of precision.
