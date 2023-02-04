@@ -10,20 +10,20 @@ package homeworkChapter_3;
 //        then returns the amount as a double value. If the quantity is not positive, it should be set to 0.
 //        If the price per item is not positive, it should be set to 0.0.
 //        Write a test app named InvoiceTest that demonstrates class Invoice’s capabilities.
-public class InvoiceTest {
+public class Exercise12InvoiceTest {
     public static void main(String[] args) {
-        Invoice invoice1 = new Invoice("1001", "Monitor", 2, 600.00);
-        Invoice invoice2 = new Invoice("1002", "Laptop", 1, 3000.00);
+        Exercise12Invoice exercise12Invoice1 = new Exercise12Invoice("1001", "Monitor", 2, 600.00);
+        Exercise12Invoice exercise12Invoice2 = new Exercise12Invoice("1002", "Laptop", 1, 3000.00);
 
         System.out.printf(
                 "First invoice %nNumber: %s%nDescription: %s%nQuantity: %d%nPrice per item: $ %,.2f%nInvoice amount: $ %,.2f%n%n",
-                invoice1.getNumber(), invoice1.getDescription(), invoice1.getQuantityPurchased(),
-                invoice1.getPricePerItem(), invoice1.getInvoiceAmount());
+                exercise12Invoice1.getNumber(), exercise12Invoice1.getDescription(), exercise12Invoice1.getQuantityPurchased(),
+                exercise12Invoice1.getPricePerItem(), exercise12Invoice1.getInvoiceAmount());
 
         System.out.printf(
                 "Second invoice %nNumber: %s%nDescription: %s%nQuantity: %d%nPrice per item: $ %,.2f%nInvoice amount: $ %,.2f",
-                invoice2.getNumber(), invoice2.getDescription(), invoice2.getQuantityPurchased(),
-                invoice2.getPricePerItem(), invoice2.getInvoiceAmount());
+                exercise12Invoice2.getNumber(), exercise12Invoice2.getDescription(), exercise12Invoice2.getQuantityPurchased(),
+                exercise12Invoice2.getPricePerItem(), exercise12Invoice2.getInvoiceAmount());
     }
 }
 

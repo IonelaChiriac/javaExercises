@@ -5,12 +5,12 @@ package homeworkChapter_3;
 // If it does, the balance should be left unchanged and the method should print
 // a message indicating "Withdrawal amount exceeded account balance." Modify class AccountTest
 // (Fig. 3.9) to test method withdraw.
-public class Account {
+public class Exercise11Account {
     private String name; // instance variable
     private double balance; // instance variable
 
     // Account constructor that receives two parameters
-    public Account(String name, double balance) {
+    public Exercise11Account(String name, double balance) {
         this.name = name; // assign name to instance variable name
 
         // validate that the balance is greater than 0.0; if it's not,
@@ -32,7 +32,6 @@ public class Account {
             System.out.println("Withdrawal amount exceeded account balance.");
             return;
         }
-
         balance = balance - withdrawal;
     }
 

@@ -10,23 +10,17 @@ package homeworkChapter_3;
 //        then returns the amount as a double value. If the quantity is not positive, it should be set to 0.
 //        If the price per item is not positive, it should be set to 0.0.
 //        Write a test app named InvoiceTest that demonstrates class Invoice’s capabilities.
-public class Invoice {
+public class Exercise12Invoice {
     private String number;
     private String description;
     private int quantity;
     private double pricePerItem;
 
-    public Invoice(String number, String description, int quantity, double pricePerItem) {
+    public Exercise12Invoice(String number, String description, int quantity, double pricePerItem) {
         this.number = number;
         this.description = description;
-
-        if (quantity > 0) {
-            this.quantity = quantity;
-        }
-
-        if (pricePerItem > 0.0) {
-            this.pricePerItem = pricePerItem;
-        }
+        setQuantity(quantity);
+        setPricePerItem(pricePerItem);
     }
 
     public double getInvoiceAmount() {
