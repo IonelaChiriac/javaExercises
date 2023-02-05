@@ -41,7 +41,7 @@ public class Exercise17HealthProfile {
     int weight_in_pounds;
     int height_in_inches;
 
-    //parameterized constructor that sets the first name,last name and day,month ,year and heightand weight
+    //parameterized constructor that sets the first name,last name and day,month ,year and height and weight
     public Exercise17HealthProfile(String firstName, String lastName, int day, int month, int year, int height_in_inches, int weight_in_pounds) {
         this.firstName = firstName;
         this.lastName = lastName;
