@@ -20,57 +20,53 @@ import java.util.Scanner;
 public class Exercise18CreditCalculator {
     //Credit Limit Calculator
     public static void main(String[] args) {
-        String creditStatusString;
-        int account, // account number
-                oldBalance, // starting balance
-                charges, // total charges
-                credits, // total credits
-                creditLimit, // allowed credit limit
-                newBalance; // new balance
 
-//scanner object for keyboard input
+           int  accountNumber, // account number
+                beginingBalance, //starting balance
+                totalCharges, // total charges
+                totalCredits, // total credits
+                creditLimit; // allowed credit limit
+               // newBalance; // new balance
+
+//scanner object for user input
         Scanner keyboard = new Scanner(System.in);
-//input account number
-        System.out.print("Please enter Account Number: ");
-        account = keyboard.nextInt();
-//input balance
-        System.out.print("Please enter Balance: ");
-        oldBalance = keyboard.nextInt();
-//input charges
-        System.out.print("Please enter Charges: ");
-        charges = keyboard.nextInt();
-//input credits
-        System.out.print("Please enter Credits: ");
-        credits = keyboard.nextInt();
 
-        System.out.print("Please enter Credit Limit: ");
+//input account number
+        System.out.print("Please enter customer's account number: ");
+        accountNumber = keyboard.nextInt();
+//input balance
+        System.out.print("Please enter customer's beginning balance: ");
+        beginingBalance = keyboard.nextInt();
+//input charges
+        System.out.print("Please enter total of all items charged by customer this month: ");
+        totalCharges = keyboard.nextInt();
+//input credits
+        System.out.print("Please enter total of all credits applied to the customer’s account this month: ");
+        totalCredits = keyboard.nextInt();
+
+        System.out.print("Please enter credit limit applicable to customer: ");
         creditLimit = keyboard.nextInt();
 
-        newBalance = oldBalance + charges - credits;
+        int newBalance = beginingBalance + totalCharges - totalCredits;
+        System.out.printf("The customer's new balance is %d\n", newBalance); //print new balance
 
-        if (newBalance > creditLimit)
-            creditStatusString = "Credit limit exceeded";
-        else
-            creditStatusString = "Credit Report";
-//output data
-        System.out.println("New balance is " + newBalance);
-        System.out.print(creditStatusString);
-    }
+        if(newBalance > creditLimit)
+            System.out.println("Credit Limit Exceeded!\n");
+     }
 }
 
 //output
-//        Please enter Account Number: 123
-//        Please enter Balance: 1000
-//        Please enter Charges: 50
-//        Please enter Credits: 20
-//        Please enter Credit Limit: 2000
-//        New balance is 1030
-//        Credit Report
+//Please enter customer's account number: 123
+//Please enter customer's beginning balance: 1000
+//Please enter total of all items charged by customer this month: 50
+//Please enter total of all credits applied to the customer’s account this month: 20
+//Please enter credit limit applicable to customer: 2000
+//The customer's new balance is 1030
 
-//        Please enter Account Number: 123
-//        Please enter Balance: 1000
-//        Please enter Charges: 50
-//        Please enter Credits: 20
-//        Please enter Credit Limit: 1000
-//        New balance is 1030
-//        Credit limit exceeded
+//Please enter customer's account number: 123
+//Please enter customer's beginning balance: 1000
+//Please enter total of all items charged by customer this month: 50
+//Please enter total of all credits applied to the customer’s account this month: 20
+//Please enter credit limit applicable to customer: 1000
+//The customer's new balance is 1030
+//Credit Limit Exceeded!

@@ -16,58 +16,24 @@ import java.util.Scanner;
 public class Exercise31DecimalEquivalentOfABinaryNumber {
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
-        int binaryNumber = input.nextInt();
 
-        int decimalNumber = 0;
+        int binary, decimal= 0, bit = 1;
+        System.out.println("Please enter a binary number: ");
+        binary = input.nextInt();
 
-        if (binaryNumber >= 10 && binaryNumber <= 99) {
-            int firstDigit = binaryNumber % 10;
-            int secondDigit = binaryNumber / 10;
-
-            if (firstDigit == 1 || firstDigit == 0 && secondDigit == 1) {
-                decimalNumber = firstDigit + secondDigit * 2;
-            }
-            System.out.println("The decimal equivalent of " + binaryNumber + "is " + decimalNumber);
-        } else if (binaryNumber >= 100 && binaryNumber <= 999) {
-            int firstDigit = binaryNumber % 10;
-            int secondDigit = binaryNumber / 10 % 10;
-            int thirdDigit = binaryNumber / 100;
-
-            if (firstDigit == 1 || firstDigit == 0 && (secondDigit == 1 || secondDigit == 0) && thirdDigit == 1) {
-                decimalNumber = firstDigit + secondDigit * 2 + thirdDigit * 4;
-            }
-            System.out.println("The decimal equivalent of " + binaryNumber + " is " + decimalNumber);
-        } else if (binaryNumber >= 1000 && binaryNumber <= 9999) {
-            int firstDigit = binaryNumber % 10;
-            int secondDigit = binaryNumber / 10 % 10;
-            int thirdDigit = binaryNumber / 100 % 10;
-            int fourthDigit = binaryNumber / 1000;
-
-            if (firstDigit == 1 || firstDigit == 0 && (secondDigit == 1 || secondDigit == 0) && (thirdDigit == 1 || thirdDigit == 0) && fourthDigit == 1) {
-                decimalNumber = firstDigit + secondDigit * 2 + thirdDigit * 4 + fourthDigit * 8;
-            }
-            System.out.println("The decimal equivalent of " + binaryNumber + " is " + decimalNumber);
-        } else if (binaryNumber >= 10000 && binaryNumber <= 99999) {
-            int firstDigit = binaryNumber % 10;
-            int secondDigit = binaryNumber / 10 % 10;
-            int thirdDigit = binaryNumber / 100 % 10;
-            int fourthDigit = binaryNumber / 1000 % 10;
-            int fifthDigit = binaryNumber / 10000;
-
-            if (firstDigit == 1 || firstDigit == 0 && (secondDigit == 1 || secondDigit == 0) && (thirdDigit == 1 || thirdDigit == 0) && (fourthDigit == 1 || fourthDigit == 0) && fifthDigit == 1) {
-                decimalNumber = firstDigit + secondDigit * 2 + thirdDigit * 4 + fourthDigit * 8 + fifthDigit * 16;
-            }
-            System.out.println("The decimal equivalent of " + binaryNumber + " is " + decimalNumber);
-        } else {
-            System.out.println("Number is not a binary number");
+        // convert to decimal equivalent
+        while ( binary != 0 ) {
+            decimal += binary % 10 * bit;
+            binary /= 10;
+            bit *= 2;
         }
 
+        System.out.printf("The decimal equivalent of the binary introduced is %d", decimal);
     }
 }
 
 //output
-
+//Please enter a binary number:
 //0101
-//The decimal equivalent of 101 is 5
+//The decimal equivalent of the binary introduced is 5

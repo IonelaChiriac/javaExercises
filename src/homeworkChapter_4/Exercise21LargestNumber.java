@@ -22,7 +22,7 @@ public class Exercise21LargestNumber {
 //declare and initialize three local variables
         int counter = 10;
         int number;
-        int largest = 0;
+        int largest = Integer.MIN_VALUE;
 
 // create a Scanner object for keyboard input.
         Scanner obj = new Scanner(System.in);
@@ -59,3 +59,17 @@ public class Exercise21LargestNumber {
 //        98
 //        85
 //        The largest in the group is : 98
+
+//case with minus
+//Please enter 10 numbers
+//-1
+//-2
+//-3
+//-4
+//-5
+//-6
+//-7
+//-8
+//-9
+//-10
+//The largest in the group is : -1

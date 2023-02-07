@@ -38,35 +38,35 @@ public class Exercise17HealthProfile {
     private int year;
 
     //Double variables to read weight and height
-    int weight_in_pounds;
-    int height_in_inches;
+    int weightPounds;
+    int heightInches;
 
     //parameterized constructor that sets the first name,last name and day,month ,year and height and weight
-    public Exercise17HealthProfile(String firstName, String lastName, int day, int month, int year, int height_in_inches, int weight_in_pounds) {
+    public Exercise17HealthProfile(String firstName, String lastName, int day, int month, int year, int heightInches, int weightPounds) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.day = day;
         this.month = month;
         this.year = year;
-        this.height_in_inches = height_in_inches;
-        this.weight_in_pounds = weight_in_pounds;
+        this.heightInches = heightInches;
+        this.weightPounds = weightPounds;
     }
 
     //methods to set the height and weight
-    public void setHeight(int height_in_inches) {
-        this.height_in_inches = height_in_inches;
+    public void setHeight(int heightInches) {
+        this.heightInches = heightInches;
     }
 
-    public void setWeight(int weight_in_pounds) {
-        this.weight_in_pounds = weight_in_pounds;
+    public void setWeight(int weightPounds) {
+        this.weightPounds = weightPounds;
     }
 
     public int getHeight() {
-        return height_in_inches;
+        return heightInches;
     }
 
     public int getWeight() {
-        return weight_in_pounds;
+        return weightPounds;
     }
 
     //methods that sets the first name and last name
@@ -120,7 +120,7 @@ public class Exercise17HealthProfile {
     //Create an instance of Calendar class with year, month and day values.
         Calendar dateOfBirth = new GregorianCalendar(year, month, day);
 
-    //Calendar instantiates the current date .
+    //Calendar instantiates the current date
         Calendar currentDate = new GregorianCalendar();
 
     //Get differnce between current
@@ -146,16 +146,15 @@ public class Exercise17HealthProfile {
     //number from 50 to 85
         int randomNum = random.nextInt(36) + minimum;
 
-    //return a target heart rate on maximumheart //rate.
+    //return a target heart rate on maximum heart //rate.
 
         return maximumHeartRate() * randomNum / 100;
-
     }
 
     //the method getBMI returns the body mass index of a person.
     public double getBMI() {
-        //calculate the body mass index using BMI formula for weight in pounds and height in inches. */
-        double bodyMassIndex = (double) (weight_in_pounds * CONVERSION_FACTOR) / (height_in_inches * height_in_inches);
+        //calculate the body mass index using BMI formula for weight in pounds and height in inches.
+        double bodyMassIndex = (double) (weightPounds * CONVERSION_FACTOR) / (heightInches * heightInches);
         return bodyMassIndex;
 
     }

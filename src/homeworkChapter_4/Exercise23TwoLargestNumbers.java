@@ -13,8 +13,8 @@ public class Exercise23TwoLargestNumbers {
 // Declare the variables
         int counter = 0;
         int number = 0;
-        int largest = 0;
-        int secondLargest = 0;
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
 
 // create a Scanner object for keyboard input.
         Scanner keyboard = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Exercise23TwoLargestNumbers {
 //loop for 10 values
         while (counter < 10) {
 
-// prompt and read a input number from the user
+// prompt and read an input number from the user
             System.out.print("Please enter number " + (counter + 1) + " : ");
             number = keyboard.nextInt();
 
@@ -38,9 +38,9 @@ public class Exercise23TwoLargestNumbers {
 // check the number is less than the largest
                 if (number < largest)
 
-// check the number is greater than the secondlargest
+// check the number is greater than the second largest
                     if (number > secondLargest)
-// store the number to the secondlargest
+// store the number to the second largest
                         secondLargest = number;
             }
 
@@ -51,7 +51,7 @@ public class Exercise23TwoLargestNumbers {
 // display the largest number
         System.out.println("Largest in the group is: " + largest);
 
-// display the second largest number
+// display the second's largest number
         System.out.println("Second largest in the group is: " + secondLargest);
     }
 }
@@ -69,3 +69,19 @@ public class Exercise23TwoLargestNumbers {
 //        Please enter number 10 : 10
 //        Largest in the group is: 10
 //        Second largest in the group is: 9
+
+//case with minus
+//Please enter number 1 : -1
+//Please enter number 2 : -2
+//Please enter number 3 : -3
+//Please enter number 4 : -4
+//Please enter number 5 : -5
+//Please enter number 6 : -6
+//Please enter number 7 : -7
+//Please enter number 8 : -8
+//Please enter number 9 : -9
+//Please enter number 10 : -10
+//Largest in the group is: -1
+//Second largest in the group is: -2
+//
+//Process finished with exit code 0

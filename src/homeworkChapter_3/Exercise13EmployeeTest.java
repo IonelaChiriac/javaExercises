@@ -11,16 +11,16 @@ public class Exercise13EmployeeTest {
 
 
         System.out.println("Junior employee details:");
-        System.out.println("First name: "+ emp1.getfirstName() + "\nLast name : " + emp1.getlastName());
+        System.out.println("First name: "+ emp1.getFirstName() + "\nLast name : " + emp1.getLastName());
 
-        System.out.println("Monthly salary:$" + emp1.getmonthlySalary() + "\nYearly salary: $" + (emp1.getmonthlySalary() * 12));
-        System.out.println("After salary raise with 10% then yearly salary is:$" + (((emp1.getmonthlySalary() * (0.10)) + emp1.getmonthlySalary()) * 12));
+        System.out.println("Monthly salary:$" + emp1.getMonthlySalary() + "\nYearly salary: $" + (emp1.getMonthlySalary() * 12));
+        System.out.println("After salary raise with 10% then yearly salary is:$" + (((emp1.getMonthlySalary() * (0.10)) + emp1.getMonthlySalary()) * 12));
 
 
         System.out.println("\nSenior employee details:");
-        System.out.println("First name: " + emp2.getfirstName() + "\nLast name : " + emp1.getlastName());
-        System.out.println("Monthly salary:$" + emp2.getmonthlySalary() + "\nYearly salary: $" + (emp2.getmonthlySalary() * 12));
-        System.out.println("After salary raise with 10% then yearly salary is:$" + (((emp2.getmonthlySalary() * (0.10)) + emp2.getmonthlySalary()) * 12));
+        System.out.println("First name: " + emp2.getFirstName() + "\nLast name : " + emp1.getLastName());
+        System.out.println("Monthly salary:$" + emp2.getMonthlySalary() + "\nYearly salary: $" + (emp2.getMonthlySalary() * 12));
+        System.out.println("After salary raise with 10% then yearly salary is:$" + (((emp2.getMonthlySalary() * (0.10)) + emp2.getMonthlySalary()) * 12));
     }
 }
 

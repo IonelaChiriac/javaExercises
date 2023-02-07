@@ -10,11 +10,11 @@ public class Exercise17TestHealthProfile {
         System.out.println("Enter first name : ");
 
 //Read first name
-        String fname = scanner.nextLine();
+        String firstName = scanner.nextLine();
         System.out.println("Enter Last name : ");
 
 //Read lat name
-        String lname = scanner.nextLine();
+        String lastName = scanner.nextLine();
         System.out.println("Enter day of Birth Date : ");
 
 //Read day value
@@ -30,12 +30,12 @@ public class Exercise17TestHealthProfile {
 
 //reading eight and height of the person
         System.out.println("Enter Weight [in Pounds]: ");
-        int weight_in_pounds = scanner.nextInt();
+        int weightPounds = scanner.nextInt();
 
         System.out.println("Enter Height [in inches]:");
-        int height_in_inches = scanner.nextInt();
+        int heightInches = scanner.nextInt();
 //Create an instance of HealthProfile with first name, last name,day,month,year,height and weight
-        Exercise17HealthProfile patientHealthProfile = new Exercise17HealthProfile(fname, lname, day, month, year, height_in_inches, weight_in_pounds);
+        Exercise17HealthProfile patientHealthProfile = new Exercise17HealthProfile(firstName, lastName, day, month, year, heightInches, weightPounds);
 
 //Print name of Person
         System.out.println("Name : " + patientHealthProfile.getFirstName().concat(" " + patientHealthProfile.getLastName()));
@@ -74,3 +74,31 @@ public class Exercise17TestHealthProfile {
         System.out.println("Obese: 30 or greater");
     }
 }
+
+//output
+//Enter first name :
+//Jane
+//Enter Last name :
+//Green
+//Enter day of Birth Date :
+//06
+//Enter month of Birth Date:
+//10
+//Enter year of Birth Date :
+//1990
+//Enter Weight [in Pounds]:
+//116
+//Enter Height [in inches]:
+//63
+//Name : Jane Green
+//Age : 33
+//Maximum heart rate :187
+//Target heart rate :143
+//Body Mass Index : 20.54623330813807
+//Normal
+//BMI-Chart
+//BMI VALUES
+//Underweight: less than 18.5
+//Normal : between 18.5 and 24.9
+//Overweight: between 25 and 29.9
+//Obese: 30 or greater

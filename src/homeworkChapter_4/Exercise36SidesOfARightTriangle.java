@@ -1,4 +1,5 @@
 package homeworkChapter_4;
+
 //4.35(Sides of a Triangle)
 //Write an application that reads three nonzero values entered by the user
 //and determines and prints whether they could represent the sides of a triangle.
@@ -11,9 +12,10 @@ import java.util.Scanner;
 public class Exercise36SidesOfARightTriangle {
     public static void main(String[] args) {
         int side1, // length of side 1
-                side2, // length of side 2
-                side3; // length of side 3
+            side2, // length of side 2
+            side3; // length of side 3
         String result; // output String
+
         //scanner object for keyboard input
         Scanner keyboard = new Scanner(System.in);
         //input side 1

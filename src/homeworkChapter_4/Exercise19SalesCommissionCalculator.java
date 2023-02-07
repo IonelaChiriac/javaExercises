@@ -76,9 +76,7 @@ public class Exercise19SalesCommissionCalculator {
         }
 
         //display the information about the number of items sold by the sales person
-        System.out.printf("\nThe sales person sold %d"
-                + " items in last week\n", totalItemsSold);
-
+        System.out.printf("\nThe sales person sold %d" + " items in last week\n", totalItemsSold);
 
         //display the information about the total sales done by the sales person
         System.out.printf("Overall sales done by the" + " sales person is: $%.2f\n", gross);
@@ -87,7 +85,6 @@ public class Exercise19SalesCommissionCalculator {
         //compute the commission of the sales person
         commission = (9.0 / 100) * gross;
         System.out.printf("\nCommission earned by the" + " sales person is: $%.2f\n", commission);
-
 
         //compute the net amount of the earnings of the salesperson
         earnings = 200.00 + commission;

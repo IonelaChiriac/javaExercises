@@ -16,8 +16,8 @@ public class Exercise17GasMillage {
     // start main method
     public static void main(String[] args) {
     // Declare and initialize
-        int miles = 0, total_miles = 0;
-        double gallons, total_gallons = 0.0;
+        int miles = 0, totalMiles = 0;
+        double gallons, totalGallons = 0.0;
 
     // create a Scanner object for keyboard input.
         Scanner obj = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Exercise17GasMillage {
         while (miles != -1) {
 
     // prompt user for data
-            System.out.println("Please enter the miles " + "used(-1 to quit) : ");
+            System.out.println("Please enter the miles " + "used (-1 to quit) : ");
 
     // read data from user
             miles = obj.nextInt();
@@ -41,14 +41,14 @@ public class Exercise17GasMillage {
                 gallons = obj.nextDouble();
 
     // calculate and display Miles per gallons
-                total_miles = total_miles + miles;
-                total_gallons = total_gallons + gallons;
+                totalMiles = totalMiles + miles;
+                totalGallons = totalGallons + gallons;
 
                 System.out.println("MilePerGallon(MPG) " + "this tankful = " + formatter.format(miles / gallons));
-                System.out.println("Total MPG : " + formatter.format(total_miles / total_gallons));
+                System.out.println("Total MPG : " + formatter.format(totalMiles / totalGallons));
             }
         }
-        System.out.println("Total miles : " + total_miles);
+        System.out.println("Total miles : " + totalMiles);
         System.exit(0);
     }
 }
