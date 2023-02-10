@@ -1,4 +1,4 @@
-import exercisesChapter_4.Student;
+import exercisesChapter4.Student;
 
 // Fig. 4.5: StudentTest.java
 // Create and test Student objects.
