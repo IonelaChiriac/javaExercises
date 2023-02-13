@@ -15,7 +15,7 @@ public class Exercise14CompoundInterestProgram {
         // end of each year
         double principal = 1000.0;
         //initial amount before interest
-        double rate = .05;
+        double rate = 0.05;
         // 	interest rate
 
         //create decimal format object

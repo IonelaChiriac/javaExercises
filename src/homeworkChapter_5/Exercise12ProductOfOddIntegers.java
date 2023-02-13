@@ -10,7 +10,7 @@ public class Exercise12ProductOfOddIntegers {
 
         //declare product and initialize to 1
         //count from 1 to 15
-        //multiply prpduct by 1
+        //multiply product by 1
         for (int i = 1; i <= 15; i += 2)
             product *= i;
 

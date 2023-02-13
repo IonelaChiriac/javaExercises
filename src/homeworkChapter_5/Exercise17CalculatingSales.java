@@ -60,7 +60,8 @@ public class Exercise17CalculatingSales {
             }
         }
         //decimal format to format floating point numbers with two digits to the right of the decimal point
-        NumberFormat moneyFormat = NumberFormat.getCurrencyInstance(Locale.US);
+        //NumberFormat moneyFormat = NumberFormat.getCurrencyInstance(Locale.US); //case with currency US
+        NumberFormat moneyFormat = NumberFormat.getCurrencyInstance(new Locale("ro","RO")); //case with currency RO
         //summary message
         String output = "Product 1: " + moneyFormat.format(product1);
         output += "\nProduct 2: "
@@ -77,7 +78,26 @@ public class Exercise17CalculatingSales {
     }
 }
 
-//output
+//output case with currency RO
+//Please enter product number (1-5) (0 to stop): 1
+//Please enter quantity sold: 3
+//Please enter product number (1-5) (0 to stop): 2
+//Please enter quantity sold: 1
+//Please enter product number (1-5) (0 to stop): 3
+//Please enter quantity sold: 5
+//Please enter product number (1-5) (0 to stop): 4
+//Please enter quantity sold: 10
+//Please enter product number (1-5) (0 to stop): 5
+//Please enter quantity sold: 7
+//Please enter product number (1-5) (0 to stop): 0
+//Product 1: 8,94 RON
+//Product 2: 4,50 RON
+//Product 3: 49,90 RON
+//Product 4: 44,90 RON
+//Product 5: 48,09 RON
+
+
+//output case with currency US
 //Please enter product number (1-5) (0 to stop): 1
 //Please enter quantity sold: 3
 //Please enter product number (1-5) (0 to stop): 2
