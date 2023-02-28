@@ -23,10 +23,12 @@ public class Exercise6SavingsAccount {
     private static double annualInterestRate;
     //indicate the amount of money the saver has on deposit
     private double savingsBalance;
+
     //constructor of the SavingsAccount class which initializes the savingsBalance instance variable with the value passed to it
     public Exercise6SavingsAccount(double savingsBalance) {
         this.savingsBalance = savingsBalance;
     }
+
     //calculates the monthly interest by multiplying the savingsBalance by the annualInterestRate divided by 12, adding 1, and assigning the result back to the savingsBalance instance variable
     public void calculateMonthlyInterest() {
         savingsBalance = savingsBalance * (annualInterestRate / 12 / 100 + 1);

@@ -31,15 +31,13 @@ public class Exercise5Time2SecondsTest {
         try {
             Exercise5Time2Seconds t6 = new Exercise5Time2Seconds(27, 74, 99); // invalid values
         } catch (IllegalArgumentException e) {
-            System.out.printf("%nException while initializing t6: %s%n",
-                    e.getMessage());
+            System.out.printf("%nException while initializing t6: %s%n", e.getMessage());
         }
     } // end method main
 
     // displays a Time2 object in 24-hour and 12-hour formats
     private static void displayTime(String header, Exercise5Time2Seconds t) {
-        System.out.printf("%s%n  %s%n  %s%n",
-                header, t.toUniversalString(), t.toString());
+        System.out.printf("%s%n  %s%n  %s%n", header, t.toUniversalString(), t.toString());
     } // end method displayTime
 } // end class Time2Test
 
